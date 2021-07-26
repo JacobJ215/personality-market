@@ -123,8 +123,8 @@ const dApp = {
     this.accounts = await window.web3.eth.getAccounts();
     this.contractAddress = contractAddress;
 
-    this.pesonalityJson = await (await fetch("./PersonalityMarket.json")).json();
-    this.auctionJson = await (await fetch("./PersonalityAuction.json")).json();
+    this.pesonalityJson = await (await fetch("PersonalityMarket.json")).json();
+    this.auctionJson = await (await fetch("PersonalityAuction.json")).json();
 
     this.contract = new window.web3.eth.Contract(
       this.personalityJson,
