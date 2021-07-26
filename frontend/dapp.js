@@ -127,7 +127,7 @@ const dApp = {
     this.auctionJson = await (await fetch("./PersonalityAuction.json")).json();
 
     this.contract = new window.web3.eth.Contract(
-      this.personalityJson,
+      this.pesonalityJson,
       this.contractAddress,
       { defaultAccount: this.accounts[0] }
     );
