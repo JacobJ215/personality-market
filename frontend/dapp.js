@@ -135,7 +135,6 @@ const dApp = {
 
     this.isAdmin = this.accounts[0] == await this.contract.methods.owner().call();
 
-    await this.init();
     await this.updateUI();
   }
 };
